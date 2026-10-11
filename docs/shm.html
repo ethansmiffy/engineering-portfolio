@@ -41,13 +41,8 @@
 
       <a
         class="brand"
-        href="index.html"
-      >
-        Ethan Smith
-        <span
-          aria-hidden="true"
-          style="color:#075d85"
-        >.</span>
+        href="index.html">
+        Ethan Smith<span aria-hidden="true" style="color:#075d85">.</span>
       </a>
 
       <nav aria-label="Main navigation">
@@ -80,12 +75,12 @@
       </h1>
 
       <p class="lead">
-        Detecting subtle changes in ultrasonic signals while accounting for
-        variation in environmental and operating conditions.
+        Applying deep learning models to interpret signals under environmental and
+        operational variation in the context of Structural Health Monitoring (SHM).
       </p>
 
       <p class="date">
-        Undergraduate project and summer research · 2026
+        Undergraduate project and summer research · January – August 2026
       </p>
 
     </div>
@@ -145,11 +140,16 @@
           </h2>
 
           <p>
-            Guided-wave signals change with both structural condition and the
-            environment. I developed an LSTM model trained on healthy ultrasonic
-            data, using deviations from predicted healthy responses to identify
-            synthetic defect signals. Healthy-only training avoids requiring
-            damaged examples during model training.
+            Guided-wave signals are used to monitor the conditions of structures that are
+            permanently rigged with ultrasonic emitter-receiver sensor pairs. These
+            guided-waves reflect off cracks and deformations in the structure, subsequently the 
+            received signal can be interpretted for damage and inform maintenance decisions.
+            The challenge with this SHM technique is that received signals vary under differing
+            environmental and operating conditions (EOCs), making small disparities in signals, that may
+            indicate damage, hard to detect and classify as defective. This project impliments
+            deep learning to learn and predict healthy signal behaviour and therefore identify 
+            small defects with high accuracy. Healthy-only training avoids requiring
+            damaged examples during model training saving experimental effort and material cost.
           </p>
 
         </section>
@@ -162,10 +162,13 @@
 
           <p>
             I led a five-person undergraduate team, organising meetings,
-            coordinating milestones and integrating individual contributions.
-            I personally developed the LSTM model in Python/PyTorch, then
-            independently extended the research over summer and benchmarked it
-            against a multistep NARX baseline from the published literature.
+            coordinating milestones and integrating individual contributions to produce a
+            team undergraduate report. This report compiled three methods for defect detection
+            including traditional Optimal Baseline Selection (OBS), a CNN, and a time series LSTM.
+            I personally developed the LSTM model in Python/PyTorch, producing a much more 
+            successful detector than the comparators. I then independently extended the research 
+            over summer, tuning the model further and benchmarking it against a multistep NARX 
+            baseline from the 2023 published literature, further improving on the experimental NARX neural network.
           </p>
 
         </section>
